@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import PopularPropertyCard from "./PopularPropertyCard";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const PopularProperties = ({ initialInput, ...props }: any) => {
   const [popularProperties, setPopularProperties] =

@@ -1,7 +1,7 @@
 import { Box, Stack } from "@mui/material";
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -42,7 +42,7 @@ const TopProperties = ({ initialInput, ...props }: any) => {
               clickable: true,
               type: "bullets",
             }}
-            // modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination]}
           >
             {topProperties.map((property, index) => {
               return (

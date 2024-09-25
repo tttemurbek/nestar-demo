@@ -2,6 +2,11 @@ import { Box, Stack, Divider, Typography } from "@mui/material";
 import React from "react";
 import IconButton from "@mui/material/IconButton";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 
 const PopularPropertyCard = () => {

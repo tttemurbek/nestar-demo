@@ -1,10 +1,14 @@
 import { Box, Stack } from "@mui/material";
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBack";
 import TopAgentCard from "./TopAgentCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const TopAgents = ({ initialInput, ...props }: any) => {
   const [topAgents, setTopAgents] = useState<number[]>(initialInput);
