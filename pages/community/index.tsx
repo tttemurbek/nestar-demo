@@ -1,20 +1,20 @@
-import withLayoutBasic from "@/libs/components/layout/LayoutBasic";
-import useDeviceDetect from "@/libs/hooks/useDeviceDetect";
-import { Stack } from "@mui/material";
-import { NextPage } from "next";
+import { useState } from "react";
 
-const Community: NextPage = () => {
-  const device = useDeviceDetect();
-
-  if (device === "mobile") {
-    return <Stack>COMMUNITY PAGE MOBILE</Stack>;
-  } else {
-    return (
-      <div style={{ margin: "20px 0" }}>
-        <Stack className="container">COMMUNITY</Stack>
-      </div>
-    );
-  }
+const CommunityList = () => {
+    console.log("community component, pages routing");
+    
+  const [title, setTitle] = useState<string>("hello");
+  return (
+    <div>
+      COMMUNITY LIST{" "}
+      <button
+        onClick={() => alert("YOU REALLY PRESSED ME BRO")}
+        style={{ margin: "40px" }}
+      >
+        PRESS ME
+      </button>{" "}
+    </div>
+  );
 };
 
-export default withLayoutBasic(Community);
+export default CommunityList;
